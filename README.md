@@ -3,7 +3,7 @@ Website portofolio pribadi ini dibuat untuk menampilkan profil, karya, pengalama
 🏗️ Struktur Halaman
 
 Home Page
-Menampilkan perkenalan singkat, foto profil, dan tagline profesional. Halaman ini juga dilengkapi efek animasi seperti typing effect dan smooth scroll untuk memberikan kesan interaktif dan menarik.
+Menampilkan perkenalan singkat, foto profil, dan Deskripsi profesional.
 
 Portfolio Page
 Berisi daftar proyek atau karya yang pernah dibuat, lengkap dengan deskripsi, gambar, dan tautan ke versi demo atau repository. Pengguna dapat melakukan filter proyek berdasarkan kategori serta membuka popup modal untuk melihat detail setiap proyek.
@@ -16,11 +16,13 @@ Berisi formulir kontak untuk mengirim pesan langsung kepada pemilik portofolio. 
 
 ⚙️ Teknologi yang Digunakan
 
-HTML5 → untuk struktur konten setiap halaman.
+HTML → untuk struktur konten setiap halaman.
 
-CSS3 → untuk styling, layout responsif, dan efek transisi.
+CSS → untuk styling, layout responsif, dan efek transisi.
 
-JavaScript (Vanilla) → untuk animasi interaktif, validasi form, dan logika fitur seperti dark mode & popup modal.
+Bootstrap → untuk styling, layout responsif, dan efek transisi dengan lebih mudah dan efisien.
+
+JavaScript → untuk animasi interaktif, validasi form, dan logika fitur seperti dark mode & popup modal.
 
 💡 Fitur Utama
 
