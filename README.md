@@ -35,3 +35,5 @@ JavaScript (Vanilla) → untuk animasi interaktif, validasi form, dan logika fit
 🏅 Timeline pendidikan dan pencapaian dengan animasi progresif.
 
 📩 Form kontak interaktif dengan validasi input dan notifikasi hasil.
+
+Link Youtube: https://youtu.be/7twfEjkaUao
