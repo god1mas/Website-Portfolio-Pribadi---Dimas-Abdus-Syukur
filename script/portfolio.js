@@ -72,7 +72,7 @@ const portfolioData = [
             "./images/portfolios/port5 (3).png"
         ],
         tags: ["Figma", "Mobile Design", "Prototyping", "User Testing"],
-        liveLink: "#",
+        liveLink: "https://www.figma.com/proto/spniWLFI6ddhti10i0QAmE/Da2DeCha-YourFit-Hi-fi?node-id=2134-482&p=f&t=jjbE0ZtqUNOuLDRO-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2147%3A546",
         githubLink: "#",
         featured: false
     }
