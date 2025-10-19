@@ -1,0 +1,383 @@
+/* Skills and Education */
+#skills {
+    padding: var(--sectionPadding);
+    background: var(--primaryBackgroundColor);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;  
+}
+
+/* Timeline Styles */
+.timeline-section {
+    margin-bottom: 3rem;
+}
+
+.timeline-title {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: var(--textColor);
+    border-bottom: 2px solid var(--primaryIconColor);
+    padding-bottom: 0.5rem;
+}
+
+.education {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 0.6s ease;
+}
+
+.education.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.education .line {
+    padding: 0 0.7rem;
+    position: relative;
+}
+
+.education .line div {
+    width: 2px;
+    height: 100%;
+    background: var(--borderColor);
+    position: relative;
+}
+
+.education-info p {
+    margin: 0.6rem 0 1.4rem;
+}
+
+.education-desc {
+    font-size: 0.9rem;
+    color: var(--secondaryTextColor);
+    line-height: 1.5;
+}
+
+.education-years {
+    margin-bottom: 1rem;
+    color: var(--primaryIconColor);
+    font-weight: 600;
+}
+
+/* The dot on the line */
+.education .line div:before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: var(--borderColor);
+    border-radius: 50%;
+    position: absolute;
+    left: -6px;
+    top: 0;
+    transition: all 0.3s ease;
+}
+
+.education:hover .line div:before {
+    background: var(--primaryIconColor);
+    transform: scale(1.2);
+}
+
+/* Skills Progress */
+.skills-progress {
+    margin-bottom: 3rem;
+}
+
+.section-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    color: var(--textColor);
+    border-left: 4px solid var(--primaryIconColor);
+    padding-left: 1rem;
+}
+
+.progress-item {
+    margin-bottom: 1.5rem;
+}
+
+.progress-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.progress-percent {
+    font-weight: 600;
+    color: var(--primaryIconColor);
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: var(--borderColor);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primaryIconColor), #4facfe);
+    border-radius: 10px;
+    width: 0%;
+    transition: width 1.5s ease-in-out;
+}
+
+/* Certificates Section */
+.certificates-section {
+    margin-bottom: 3rem;
+}
+
+.certificates-grid {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.certificate-card {
+    background: var(--cardBackground);
+    border: 1px solid var(--borderColor);
+    border-radius: 10px;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.certificate-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primaryIconColor);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.certificate-card:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+    transition: left 0.5s;
+}
+
+.certificate-card:hover::before {
+    left: 100%;
+}
+
+.certificate-icon {
+    width: 50px;
+    height: 50px;
+    background: var(--primaryIconColor);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.certificate-icon svg {
+    fill: white;
+    width: 24px;
+    height: 24px;
+}
+
+.certificate-card h5 {
+    margin-bottom: 0.5rem;
+    color: var(--textColor);
+}
+
+.certificate-card p {
+    color: var(--secondaryTextColor);
+    margin-bottom: 0.5rem;
+}
+
+.certificate-date {
+    background: var(--primaryIconColor);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+}
+
+/* Achievements Section */
+.achievements-section {
+    margin-bottom: 2rem;
+}
+
+.achievement-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background: var(--cardBackground);
+    border: 1px solid var(--borderColor);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.achievement-card:hover {
+    transform: translateX(5px);
+    border-color: var(--primaryIconColor);
+}
+
+.achievement-icon {
+    width: 40px;
+    height: 40px;
+    background: var(--primaryIconColor);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.achievement-icon svg {
+    fill: white;
+    width: 20px;
+    height: 20px;
+}
+
+.achievement-info h5 {
+    margin-bottom: 0.3rem;
+    color: var(--textColor);
+}
+
+.achievement-info p {
+    color: var(--secondaryTextColor);
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.achievement-year {
+    background: var(--secondaryBg);
+    color: var(--textColor);
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    border: 1px solid var(--borderColor);
+}
+
+/* View More Button */
+.btn-view-more {
+    background: transparent;
+    border: 2px solid var(--primaryIconColor);
+    color: var(--primaryIconColor);
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    display: block;
+    margin: 1rem auto;
+}
+
+.btn-view-more:hover {
+    background: var(--primaryIconColor);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Expandable Sections */
+.more-certificates,
+.more-achievements {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.more-certificates.show,
+.more-achievements.show {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Modal Styles */
+.modal-content {
+    background: var(--primaryBackgroundColor);
+    color: var(--textColor);
+    border: 1px solid var(--borderColor);
+}
+
+.modal-header {
+    border-bottom: 1px solid var(--borderColor);
+}
+
+.btn-close {
+    filter: invert(1);
+}
+
+/* Certificate Preview in Modal */
+.certificate-preview {
+    text-align: center;
+    padding: 1rem;
+}
+
+.certificate-preview img {
+    max-width: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--borderColor);
+}
+
+/* Skills List */
+.skills-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1.5rem;
+}
+
+.skills-right ul {
+    line-height: 2rem;
+    padding: 0 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .certificates-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .skills-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .education {
+        flex-direction: column;
+    }
+    
+    .education .line {
+        padding: 0.7rem 0;
+        width: 100%;
+    }
+    
+    .education .line div {
+        width: 100%;
+        height: 2px;
+    }
+    
+    .education .line div:before {
+        left: 0;
+        top: -6px;
+    }
+}

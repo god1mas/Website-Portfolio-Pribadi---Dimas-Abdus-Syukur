@@ -1,0 +1,87 @@
+/* Dark Mode Styles */
+
+:root {
+    --dmprimaryTextColor: #232e35; 
+    --dmsecondaryTextColor: #656d72;
+
+    --dmborderColor: #333;
+    --dmlinecolor: #d9d9d9;
+
+    --dmprimaryBackgroundColor: #121212;
+    --dmsecondaryBackgroundColor: #1e1e1e;
+    --dmthirdBackgroundColor: #f5f3fe;
+
+    --dmprimaryIconColor: #2316b5;
+    --dmprimaryIconColorHover: #150b84;
+
+    --dmsectionPadding: 60px;
+
+    --dmitemBorderRadius: 8px;
+}
+
+.dark-mode {
+  background-color: var(--dmprimaryBackgroundColor) !important;
+  color: #ffffff !important;
+}
+
+.dark-mode .navbar {
+  background-color: var(--dmprimaryBackgroundColor)  !important;
+}
+
+.dark-mode .nav-link,
+.dark-mode .form-check-label,
+.dark-mode .navbar-brand {
+  color: #ffffff !important;
+}
+
+.dark-mode .nav-link:hover {
+  color: #cccccc !important;
+}
+
+.dark-mode .btn {
+  background-color: #444;
+  color: white;
+  border: 1px solid #666;
+}
+
+.dark-mode #hero {
+  background-color: var(--dmprimaryBackgroundColor);
+  color: #ffffff;
+}
+
+.dark-mode .hero-name span{
+    color: var(--dmprimaryIconColor);
+}
+
+.dark-mode #services {
+  background-color: var(--dmsecondaryBackgroundColor);
+  color: #ffffff;
+}
+
+.dark-mode #skills {
+    background-color: var(--dmprimaryBackgroundColor);
+    color: #ffffff;
+}
+
+.dark-mode #contact {
+    background-color: var(--dmprimaryBackgroundColor);
+    color: #ffffff;
+}
+
+.dark-mode .service {
+  background-color: var(--dmprimaryBackgroundColor);
+  color: #ffffff;
+}
+
+.dark-mode footer {
+  background-color: var(--dmprimaryBackgroundColor);
+  color: #ffffff;
+}
+
+.dark-mode p,   .dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode h5, .dark-mode h6 {
+    color: #ffffff;
+}
+
+.dark-mode .service-icon svg {
+    fill: var(--dmprimaryIconColor);
+}
